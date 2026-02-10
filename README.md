@@ -1,4 +1,4 @@
-# 🎵 Guess The Chord - BFF (Backend For Frontend)
+# 🎵 Guess The Chord - Aplicación de Prueba de Calidad
 
  **Guess The Chord** iOS application - a gamified music education app focused on ear training and chord progression identification in competitive 1v1 matches.
 
@@ -11,20 +11,6 @@
 
 ---
 
-## 📋 Índice
-
-1. [Introducción](#introducción)
-2. [Objetivos de la Fase Beta](#objetivos-de-la-fase-beta)
-3. [Perfil del Tester Beta](#perfil-del-tester-beta)
-4. [Configuración Inicial](#configuración-inicial)
-5. [Metodología de Testing](#metodología-de-testing)
-6. [Casos de Prueba Críticos](#casos-de-prueba-críticos)
-7. [Reporte de Bugs](#reporte-de-bugs)
-8. [Checklist Diario](#checklist-diario)
-9. [Métricas y Feedback](#métricas-y-feedback)
-10. [Canales de Comunicación](#canales-de-comunicación)
-
----
 
 ## 🎯 Introducción
 
