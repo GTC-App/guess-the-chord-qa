@@ -30,6 +30,9 @@ Una aplicación iOS de entrenamiento auditivo musical donde dos jugadores compit
 3. **Evaluar la jugabilidad** y balance del sistema de ranking
 4. **Probar la conectividad** en diferentes condiciones de red
 5. **Recopilar feedback** sobre UX/UI y dificultad de los acordes
+6. **Testear la app en español e inglés** - Validar ambos idiomas completamente
+7. **Testear el proceso de Music Submissions End-to-End** - Flujo completo de subir música
+8. **Encontrar errores gramaticales** - Revisar textos en ambos idiomas
 
 ### Objetivos Secundarios
 
@@ -38,6 +41,8 @@ Una aplicación iOS de entrenamiento auditivo musical donde dos jugadores compit
 - Validar tiempos de respuesta del backend
 - Probar compatibilidad con diferentes versiones de iOS
 - Evaluar consumo de batería y datos
+
+
 
 ---
 
