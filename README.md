@@ -2,14 +2,6 @@
 
  **Guess The Chord** iOS application - a gamified music education app focused on ear training and chord progression identification in competitive 1v1 matches.
 
-[![Go Version](https://img.shields.io/badge/Go-1.24-blue.svg)](https://golang.org)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue.svg)](https://www.postgresql.org/)
-[![Clean Architecture](https://img.shields.io/badge/Architecture-Clean%20%2F%20Hexagonal-green.svg)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
-
----# Guía de QA - Fase Beta Testing
-## Guess The Chord
-
----
 
 
 ## 🎯 Introducción
