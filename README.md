@@ -1,16 +1,23 @@
-# 🎵 Guess The Chord - Aplicación de Prueba de Calidad
+# 🎵 Guess The Chord - Beta Testing
 
- **Guess The Chord** iOS application - a gamified music education app focused on ear training and chord progression identification in competitive 1v1 matches.
+> **Competitive ear training for chord recognition**  
+> Train your ear through ranked PvP matches. Guess chord progressions, compete globally, and improve your musical skills.
 
+🌐 **Sitio Web Oficial**: [guessthechord.com](https://guessthechord.com/)
 
+---
 
 ## 🎯 Introducción
 
-Bienvenido al programa Beta Testing de **Guess The Chord**. Como tester beta, tu rol es fundamental para garantizar que la aplicación funcione correctamente antes del lanzamiento público. Este documento te guiará a través de todo el proceso de testing.
+Bienvenido al programa Beta Testing de **Guess The Chord**. Como tester beta, tu rol es fundamental para garantizar que la aplicación funcione correctamente antes del lanzamiento público.
 
 ### ¿Qué es Guess The Chord?
 
 Una aplicación iOS de entrenamiento auditivo musical donde dos jugadores compiten en tiempo real para identificar progresiones de acordes en loops musicales.
+
+### Flujo de Partida
+
+🎯 **Find a match** → 🎧 **Listen & analyze** → 🎹 **Assign chords** → ✅ **Submit answers** → 🏆 **Win the round**
 
 ---
 
