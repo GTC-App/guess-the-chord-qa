@@ -1,0 +1,161 @@
+name: 🐛 Bug Report
+description: Reportar un bug encontrado durante el beta testing
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar este bug. Por favor completa todos los campos para ayudarnos a reproducir y resolver el problema.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Descripción del Bug
+      description: Describe claramente qué está fallando y qué esperabas que sucediera
+      placeholder: |
+        Ejemplo: Al presionar el botón "Submit" durante una partida, la app se congela y no envía las respuestas.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 Pasos para Reproducir
+      description: Lista los pasos exactos para reproducir el bug
+      placeholder: |
+        1. Iniciar sesión en la app
+        2. Entrar a "Find Match"
+        3. Esperar a encontrar oponente
+        4. Seleccionar acordes en las 8 posiciones
+        5. Presionar "Submit"
+        6. La app se congela
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 🔁 Frecuencia
+      description: ¿Con qué frecuencia ocurre este bug?
+      options:
+        - Siempre (100%)
+        - Frecuentemente (>50%)
+        - A veces (20-50%)
+        - Raramente (<20%)
+        - Solo una vez
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: ⚠️ Severidad
+      description: ¿Qué tan grave es este bug?
+      options:
+        - Crítico - La app crashea o es imposible jugar
+        - Alto - Funcionalidad principal no funciona
+        - Medio - Funcionalidad secundaria afectada
+        - Bajo - Problema visual o de UX menor
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: 📱 Dispositivo
+      description: Modelo de iPhone
+      placeholder: "iPhone 14 Pro"
+    validations:
+      required: true
+
+  - type: input
+    id: ios-version
+    attributes:
+      label: 📲 Versión de iOS
+      description: Versión del sistema operativo
+      placeholder: "17.2"
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: 🔢 Versión de la App
+      description: Versión y build de la app (visible en Configuración)
+      placeholder: "1.0.0 (Build 42)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: connection
+    attributes:
+      label: 🌐 Tipo de Conexión
+      description: ¿Qué tipo de conexión estabas usando?
+      options:
+        - WiFi
+        - 4G
+        - 5G
+        - Sin conexión
+        - Cambiando entre WiFi y datos
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: 🌍 Idioma de la App
+      description: ¿En qué idioma estaba configurada la app?
+      options:
+        - Español
+        - Inglés
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Comportamiento Esperado
+      description: ¿Qué debería suceder en lugar del bug?
+      placeholder: "La app debería enviar las respuestas y mostrar los resultados de la partida"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ Comportamiento Actual
+      description: ¿Qué está sucediendo realmente?
+      placeholder: "La app se congela por 5 segundos y luego muestra un mensaje de error de conexión"
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 📸 Evidencia
+      description: |
+        Adjunta capturas de pantalla, videos o logs.
+        Puedes arrastrar y soltar archivos aquí.
+      placeholder: "Arrastra aquí tus capturas de pantalla o videos"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📋 Información Adicional
+      description: Cualquier otro detalle relevante (contexto, observaciones, etc.)
+      placeholder: "Este bug solo ocurre cuando estoy en una racha de 3+ victorias consecutivas"
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✔️ Checklist
+      options:
+        - label: He verificado que este bug no ha sido reportado previamente
+          required: true
+        - label: He incluido pasos claros para reproducir el bug
+          required: true
+        - label: He adjuntado evidencia visual (capturas o video)
+          required: false

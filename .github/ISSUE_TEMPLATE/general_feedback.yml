@@ -1,0 +1,86 @@
+name: 💬 Feedback General
+description: Comentarios, sugerencias o feedback que no encaja en otras categorías
+title: "[FEEDBACK] "
+labels: ["feedback"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Comparte tus ideas, sugerencias o comentarios generales sobre la app.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 📂 Categoría
+      description: ¿A qué se refiere tu feedback?
+      options:
+        - Gameplay y mecánicas
+        - Sistema de ranking
+        - Dificultad de acordes
+        - Rendimiento y velocidad
+        - Consumo de batería/datos
+        - Notificaciones
+        - Tutorial/Onboarding
+        - Funcionalidad nueva sugerida
+        - Otro
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: 💭 Tu Feedback
+      description: Comparte tus pensamientos, ideas o sugerencias
+      placeholder: |
+        Ejemplo: Me encanta la app, pero creo que el sistema de ranking sube muy rápido en los primeros niveles. Sería mejor tener más partidas en Bronze para aprender mejor antes de subir a Silver.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: experience-level
+    attributes:
+      label: 🎵 Tu Nivel Musical
+      description: ¿Cuál es tu nivel de conocimiento musical?
+      options:
+        - Principiante - Poco o ningún conocimiento de teoría musical
+        - Intermedio - Conozco acordes básicos y algo de teoría
+        - Avanzado - Músico con experiencia y conocimiento teórico
+        - Profesional - Músico profesional o profesor
+    validations:
+      required: false
+
+  - type: dropdown
+    id: satisfaction
+    attributes:
+      label: 😊 Satisfacción General
+      description: ¿Qué tan satisfecho estás con la app hasta ahora?
+      options:
+        - Muy satisfecho
+        - Satisfecho
+        - Neutral
+        - Insatisfecho
+        - Muy insatisfecho
+    validations:
+      required: false
+
+  - type: input
+    id: device
+    attributes:
+      label: 📱 Dispositivo
+      placeholder: "iPhone 14 Pro"
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: 🌍 Idioma de la App
+      options:
+        - Español
+        - Inglés
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📋 Comentarios Adicionales
+      description: Cualquier otra cosa que quieras compartir

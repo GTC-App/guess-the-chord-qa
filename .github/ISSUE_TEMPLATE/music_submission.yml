@@ -1,0 +1,114 @@
+name: 🎵 Feedback de Music Submissions
+description: Reportar problemas o feedback sobre el flujo de subir música
+title: "[MUSIC] "
+labels: ["music-submission", "feedback"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reporta problemas o feedback sobre el proceso de Music Submissions (subir música a la plataforma).
+
+  - type: dropdown
+    id: submission-stage
+    attributes:
+      label: 📍 Etapa del Proceso
+      description: ¿En qué parte del flujo de Music Submissions encontraste el problema?
+      options:
+        - Acceso a la funcionalidad
+        - Selección de archivo de audio
+        - Carga/Upload del archivo
+        - Ingreso de metadatos (título, artista, etc.)
+        - Identificación de acordes
+        - Previsualización del loop
+        - Envío/Confirmación
+        - Seguimiento del estado de la submission
+        - Otro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: 🎯 Tipo de Reporte
+      description: ¿Qué tipo de reporte es este?
+      options:
+        - Bug - Algo no funciona correctamente
+        - UX - Proceso confuso o difícil de usar
+        - Sugerencia - Idea para mejorar el flujo
+        - Pregunta - No entiendo cómo funciona algo
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Descripción
+      description: Describe el problema o feedback en detalle
+      placeholder: |
+        Ejemplo: Al intentar subir un archivo MP3, la app muestra un error "Formato no soportado" pero en la documentación dice que MP3 está permitido.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 Pasos Realizados
+      description: ¿Qué pasos seguiste?
+      placeholder: |
+        1. Abrí la sección de Music Submissions
+        2. Presioné "Upload New Track"
+        3. Seleccioné un archivo MP3 de mi biblioteca
+        4. Presioné "Continue"
+        5. Apareció el error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Resultado Esperado
+      description: ¿Qué esperabas que sucediera?
+      placeholder: "El archivo debería cargarse y permitirme continuar con los metadatos"
+    validations:
+      required: false
+
+  - type: input
+    id: device
+    attributes:
+      label: 📱 Dispositivo
+      placeholder: "iPhone 14 Pro"
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: 🔢 Versión de la App
+      placeholder: "1.0.0 (Build 42)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: 🌍 Idioma de la App
+      options:
+        - Español
+        - Inglés
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 📸 Evidencia
+      description: Adjunta capturas de pantalla o videos del proceso
+      placeholder: "Arrastra aquí tus archivos"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📋 Información Adicional
+      description: Cualquier otro detalle relevante (tipo de archivo, tamaño, etc.)

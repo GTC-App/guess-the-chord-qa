@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🌐 Sitio Web Oficial
+    url: https://guessthechord.com/
+    about: Visita el sitio web oficial de Guess The Chord
+  - name: 📖 Documentación de Beta Testing
+    url: https://github.com/GTC-App/guess-the-chord-qa/blob/main/README.md
+    about: Lee la guía completa de beta testing antes de reportar

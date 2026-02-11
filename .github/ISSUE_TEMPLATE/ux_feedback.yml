@@ -1,0 +1,107 @@
+name: 💡 Feedback de UX/UI
+description: Sugerencias de mejora de experiencia de usuario o interfaz
+title: "[UX] "
+labels: ["ux-ui", "feedback"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tu feedback sobre la experiencia de usuario es muy valioso. Ayúdanos a mejorar la app.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 📂 Categoría
+      description: ¿A qué área de la app se refiere tu feedback?
+      options:
+        - Navegación general
+        - Pantalla de Login/Registro
+        - Lobby/Matchmaking
+        - Gameplay/Partida
+        - Selector de acordes
+        - Perfil y estadísticas
+        - Configuración
+        - Onboarding/Tutorial
+        - Otro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: 🎯 Tipo de Feedback
+      description: ¿Qué tipo de feedback estás proporcionando?
+      options:
+        - Confusión - Algo no es claro o intuitivo
+        - Sugerencia de mejora - Idea para mejorar algo existente
+        - Fricción - Algo es tedioso o molesto
+        - Diseño visual - Colores, tamaños, contraste
+        - Accesibilidad - Difícil de usar o leer
+        - Otro
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Descripción
+      description: Describe el problema de UX o tu sugerencia
+      placeholder: |
+        Ejemplo: El selector de acordes es difícil de usar porque los botones son muy pequeños y están muy juntos. Es fácil presionar el acorde equivocado por error.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 💡 Sugerencia de Mejora
+      description: ¿Cómo crees que podría mejorarse?
+      placeholder: |
+        Ejemplo: Aumentar el tamaño de los botones de acordes y agregar más espacio entre ellos. También podría ayudar un sistema de confirmación antes de seleccionar.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: 📊 Impacto en la Experiencia
+      description: ¿Qué tanto afecta esto tu experiencia?
+      options:
+        - Alto - Me impide disfrutar la app
+        - Medio - Es molesto pero puedo continuar
+        - Bajo - Es un detalle menor
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: 📱 Dispositivo
+      placeholder: "iPhone 14 Pro"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: 🌍 Idioma de la App
+      options:
+        - Español
+        - Inglés
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 📸 Evidencia Visual
+      description: Adjunta capturas de pantalla que muestren el problema
+      placeholder: "Arrastra aquí tus capturas de pantalla"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📋 Información Adicional
+      description: Cualquier otro contexto o detalle relevante

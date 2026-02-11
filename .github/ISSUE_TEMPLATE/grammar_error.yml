@@ -1,0 +1,91 @@
+name: ✏️ Error Gramatical o de Traducción
+description: Reportar errores de texto, gramática o traducción
+title: "[GRAMMAR] "
+labels: ["grammar", "translation"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ayúdanos a mejorar la calidad de los textos en la app reportando errores gramaticales o de traducción.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: 🌍 Idioma
+      description: ¿En qué idioma encontraste el error?
+      options:
+        - Español
+        - Inglés
+    validations:
+      required: true
+
+  - type: dropdown
+    id: location
+    attributes:
+      label: 📍 Ubicación
+      description: ¿Dónde aparece el error?
+      options:
+        - Login/Registro
+        - Lobby/Matchmaking
+        - Gameplay/Partida
+        - Perfil
+        - Configuración
+        - Tutorial/Onboarding
+        - Mensajes de error
+        - Notificaciones
+        - Otro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: error-type
+    attributes:
+      label: 🔤 Tipo de Error
+      description: ¿Qué tipo de error es?
+      options:
+        - Error ortográfico
+        - Error gramatical
+        - Traducción incorrecta
+        - Texto confuso o poco claro
+        - Falta de traducción (texto en inglés cuando debería estar en español)
+        - Otro
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-text
+    attributes:
+      label: ❌ Texto Actual (Incorrecto)
+      description: Copia exactamente el texto que está mal
+      placeholder: "Ejemplo: 'You has won the match!'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-text
+    attributes:
+      label: ✅ Texto Sugerido (Correcto)
+      description: ¿Cómo debería decir?
+      placeholder: "Ejemplo: 'You have won the match!' o '¡Has ganado la partida!'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 📝 Contexto
+      description: Describe dónde y cuándo aparece este texto
+      placeholder: "Ejemplo: Aparece en la pantalla de resultados después de ganar una partida"
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 📸 Captura de Pantalla
+      description: Adjunta una captura que muestre el error
+      placeholder: "Arrastra aquí tu captura de pantalla"
+    validations:
+      required: false
