@@ -78,7 +78,7 @@ body:
     id: device
     attributes:
       label: 📱 Dispositivo
-      placeholder: "iPhone 14 Pro"
+      placeholder: "iPhone 14 Pro / Samsung Galaxy S23"
     validations:
       required: true
 

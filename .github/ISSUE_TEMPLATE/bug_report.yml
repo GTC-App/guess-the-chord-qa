@@ -62,21 +62,32 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: device
+  - type: dropdown
+    id: platform
     attributes:
-      label: 📱 Dispositivo
-      description: Modelo de iPhone
-      placeholder: "iPhone 14 Pro"
+      label: 📱 Plataforma
+      description: ¿En qué plataforma ocurrió el bug?
+      options:
+        - iOS
+        - Android
     validations:
       required: true
 
   - type: input
-    id: ios-version
+    id: device
     attributes:
-      label: 📲 Versión de iOS
-      description: Versión del sistema operativo
-      placeholder: "17.2"
+      label: 📱 Dispositivo
+      description: Modelo del dispositivo
+      placeholder: "iPhone 14 Pro / Samsung Galaxy S23"
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: 📲 Versión del Sistema Operativo
+      description: Versión de iOS o Android
+      placeholder: "iOS 17.2 / Android 14"
     validations:
       required: true
 
